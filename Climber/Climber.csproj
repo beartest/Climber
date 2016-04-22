@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA62A9B4-B98B-4DD8-A8B0-6117BB8C099E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Climber</RootNamespace>
+    <AssemblyName>Climber</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FreeTextBox, Version=3.2.2.40667, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\Admin0.aspx" />
+    <Content Include="Admin\Admin2.aspx" />
+    <Content Include="Admin\Admin3.aspx" />
+    <Content Include="Admin\Admin4.aspx" />
+    <Content Include="Admin\Admin5.aspx" />
+    <Content Include="Admin\Admin6.aspx" />
+    <Content Include="Admin\Admin7.aspx" />
+    <Content Include="Admin\Admin8.aspx" />
+    <Content Include="Admin\Admin9.aspx" />
+    <Content Include="Admin\Admin1.aspx" />
+    <Content Include="Admin\Admin1_1.aspx" />
+    <Content Include="Admin\adminTitle.jpg" />
+    <Content Include="Admin\ftb.colorpicker.aspx" />
+    <Content Include="Admin\ftb.imagegallery.aspx" />
+    <Content Include="Admin\ftb.inserttable.aspx" />
+    <Content Include="Admin\Images\upload\万龙滑雪场.jpg" />
+    <Content Include="Admin\Images\upload\中国地质大学（北京）登山队成功登顶岗什卡卫峰 副本.jpg" />
+    <Content Include="Admin\Images\upload\中国地质大学（北京）登山队成功登顶岗什卡卫峰.jpg" />
+    <Content Include="Admin\Images\upload\中国地质大学（北京）登山队报告会圆满落幕.jpg" />
+    <Content Include="Admin\Images\upload\华丽伟业中国地质大学（北京）登山队阿尼玛卿凯旋归来.jpg" />
+    <Content Include="Admin\Images\upload\地大登山攀岩俱乐部2011年终报告会圆满落幕.jpg" />
+    <Content Include="Admin\Images\upload\地大登山队五月攀登四川半脊峰及雪宝顶.jpg" />
+    <Content Include="Admin\Images\upload\地大登山队五月攀登四川半脊峰及雪宝顶2.jpg" />
+    <Content Include="Admin\Images\upload\地大登山队自背负成功攀登雪隆包.jpg" />
+    <Content Include="Admin\Images\upload\地大登山队自背负成功攀登雪隆包1.jpg" />
+    <Content Include="Admin\Images\upload\地大登山队自背负成功攀登雪隆包2.jpg" />
+    <Content Include="Admin\Images\upload\地大登山队自背负成功攀登雪隆包3.jpg" />
+    <Content Include="Admin\Images\upload\奥太娜之行——地大登山走向成熟.jpg" />
+    <Content Include="Admin\Images\upload\我校登山队登顶哈巴雪山.jpg" />
+    <Content Include="Admin\Images\upload\招新.jpg" />
+    <Content Include="Admin\Images\upload\攀登.jpg" />
+    <Content Include="Admin\Images\upload\登山文化节夏日广场展示.jpg" />
+    <Content Include="Admin\Images\upload\第二届文化节开幕式-出征仪式.jpg" />
+    <Content Include="Admin\Images\upload\誓言.jpg" />
+    <Content Include="Admin\Images\upload\骑行黑龙江 %282%29.jpg" />
+    <Content Include="Admin\Images\upload\骑行黑龙江 .jpg" />
+    <Content Include="buttons\buttons.css" />
+    <Content Include="buttons\button_bg.png" />
+    <Content Include="Admin\demo.css" />
+    <Content Include="css\page.css" />
+    <Content Include="Admin\style.css" />
+    <Content Include="Google.aspx" />
+    <Content Include="img\a1.jpg" />
+    <Content Include="img\a2.jpg" />
+    <Content Include="img\a3.jpg" />
+    <Content Include="img\a4.jpg" />
+    <Content Include="img\page_bg.jpg" />
+    <Content Include="img\section_bg.png" />
+    <Content Include="img\title.jpg" />
+    <Content Include="img\tzine.png" />
+    <Content Include="Page1.aspx" />
+    <Content Include="Page2_1.aspx" />
+    <Content Include="Page3_1.aspx" />
+    <Content Include="DDDS\Common.css" />
+    <Content Include="DDDS\custom.js" />
+    <Content Include="DDDS\fonts-min.css" />
+    <Content Include="DDDS\Footer.css" />
+    <Content Include="DDDS\frame-top-link.css" />
+    <Content Include="DDDS\grids-min.css" />
+    <Content Include="DDDS\head1.jpg" />
+    <Content Include="DDDS\head2.jpg" />
+    <Content Include="DDDS\head3.jpg" />
+    <Content Include="DDDS\head4.jpg" />
+    <Content Include="DDDS\head5.jpg" />
+    <Content Include="DDDS\image-mask.png" />
+    <Content Include="DDDS\Index.css" />
+    <Content Include="DDDS\jquery-1.7.2.min.js" />
+    <Content Include="DDDS\jquery.js" />
+    <Content Include="DDDS\jquery.slidemenu.js" />
+    <Content Include="DDDS\jqueryslidemenu.css" />
+    <Content Include="DDDS\kandytabs.pack.js" />
+    <Content Include="DDDS\MainMenu.css" />
+    <Content Include="DDDS\ModuleList.css" />
+    <Content Include="DDDS\Pager.css" />
+    <Content Include="DDDS\reset-min.css" />
+    <Content Include="DDDS\XMosaic-fds90.js" />
+    <Content Include="DDDS\XMosaic.js" />
+    <Content Include="Images\body-bg.png" />
+    <Content Include="Images\bold.gif" />
+    <Content Include="Images\bottom-bg.png" />
+    <Content Include="Images\bulletedlist.gif" />
+    <Content Include="Images\buttons.gif" />
+    <Content Include="Images\buttons.png" />
+    <Content Include="Images\copy.gif" />
+    <Content Include="Images\createlink.gif" />
+    <Content Include="Images\csharp.gif" />
+    <Content Include="Images\cut.gif" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\deletetablecolumn.gif" />
+    <Content Include="Images\deletetablerow.gif" />
+    <Content Include="Images\editstyle.gif" />
+    <Content Include="Images\edittable.gif" />
+    <Content Include="Images\edittablecell.gif" />
+    <Content Include="Images\edittablerow.gif" />
+    <Content Include="Images\fontbackcolorpicker.gif" />
+    <Content Include="Images\fontforecolorpicker.gif" />
+    <Content Include="Images\iespellcheck.gif" />
+    <Content Include="Images\image-mask.png" />
+    <Content Include="Images\indent.gif" />
+    <Content Include="Images\index_001.gif" />
+    <Content Include="Images\index_002.gif" />
+    <Content Include="Images\insertbutton.gif" />
+    <Content Include="Images\insertcheckbox.gif" />
+    <Content Include="Images\insertdate.gif" />
+    <Content Include="Images\insertdiv.gif" />
+    <Content Include="Images\insertdropdownlist.gif" />
+    <Content Include="Images\insertform.gif" />
+    <Content Include="Images\insertimage.gif" />
+    <Content Include="Images\insertimagefromgallery.gif" />
+    <Content Include="Images\insertlistbox.gif" />
+    <Content Include="Images\insertradiobutton.gif" />
+    <Content Include="Images\insertrule.gif" />
+    <Content Include="Images\inserttable.gif" />
+    <Content Include="Images\inserttablecolumn.gif" />
+    <Content Include="Images\inserttablecolumnafter.gif" />
+    <Content Include="Images\inserttablecolumnbefore.gif" />
+    <Content Include="Images\inserttablerow.gif" />
+    <Content Include="Images\inserttablerowafter.gif" />
+    <Content Include="Images\inserttablerowbefore.gif" />
+    <Content Include="Images\inserttextarea.gif" />
+    <Content Include="Images\inserttextbox.gif" />
+    <Content Include="Images\inserttime.gif" />
+    <Content Include="Images\italic.gif" />
+    <Content Include="Images\justifycenter.gif" />
+    <Content Include="Images\justifyfull.gif" />
+    <Content Include="Images\justifyleft.gif" />
+    <Content Include="Images\justifyright.gif" />
+    <Content Include="Images\left.jpg" />
+    <Content Include="Images\link-bg2.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\mergecells.gif" />
+    <Content Include="Images\mergecolumns.gif" />
+    <Content Include="Images\mergerows.gif" />
+    <Content Include="Images\mode.design.gif" />
+    <Content Include="Images\mode.html.gif" />
+    <Content Include="Images\navbar-left.png" />
+    <Content Include="Images\navbar-middle.jpg" />
+    <Content Include="Images\navbar-right.png" />
+    <Content Include="Images\navbar-spliter.png" />
+    <Content Include="Images\nav_header.png" />
+    <Content Include="Images\netspell.gif" />
+    <Content Include="Images\numberedlist.gif" />
+    <Content Include="Images\nv.png" />
+    <Content Include="Images\nv_a.png" />
+    <Content Include="Images\one.jpg" />
+    <Content Include="Images\outdent.gif" />
+    <Content Include="Images\paste.gif" />
+    <Content Include="Images\preview.gif" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Images\redo.gif" />
+    <Content Include="Images\removeformat.gif" />
+    <Content Include="Images\save.gif" />
+    <Content Include="Images\search-bg.png" />
+    <Content Include="Images\selectall.gif" />
+    <Content Include="Images\separator.horizontal.gif" />
+    <Content Include="Images\separator.vertical.gif" />
+    <Content Include="Images\separatp.gif" />
+    <Content Include="Images\side-bg.jpg" />
+    <Content Include="Images\side-bg.png" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\spellcheck.gif" />
+    <Content Include="Images\splitcells.gif" />
+    <Content Include="Images\strikethrough.gif" />
+    <Content Include="Images\subscript.gif" />
+    <Content Include="Images\superscript.gif" />
+    <Content Include="Images\toolbar.horizontal.background.gif" />
+    <Content Include="Images\toolbar.horizontal.end.gif" />
+    <Content Include="Images\toolbar.horizontal.start.gif" />
+    <Content Include="Images\toolbar.vertical.background.gif" />
+    <Content Include="Images\toolbar.vertical.end.gif" />
+    <Content Include="Images\toolbar.vertical.start.gif" />
+    <Content Include="Images\toolbarbutton.background.gif" />
+    <Content Include="Images\toolbarbutton.down.gif" />
+    <Content Include="Images\toolbarbuttoncss.off.out.gif" />
+    <Content Include="Images\toolbarbuttoncss.off.over.gif" />
+    <Content Include="Images\toolbarbuttoncss.on.out.gif" />
+    <Content Include="Images\toolbarbuttoncss.on.over.gif" />
+    <Content Include="Images\top-bg1.jpg" />
+    <Content Include="Images\top-spliter.png" />
+    <Content Include="Images\underline.gif" />
+    <Content Include="Images\undo.gif" />
+    <Content Include="Images\unlink.gif" />
+    <Content Include="Images\wordclean.gif" />
+    <Content Include="Images\wordcount.gif" />
+    <Content Include="Images\宣传部.JPG" />
+    <Content Include="Images\岩场管理部.JPG" />
+    <Content Include="Images\报告会.jpg" />
+    <Content Include="Images\支教.JPG" />
+    <Content Include="Images\暂时.jpg" />
+    <Content Include="Images\训练部.jpg" />
+    <Content Include="Page3_2.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Page2_3.aspx" />
+    <Content Include="Page2_2.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin0.aspx.cs">
+      <DependentUpon>Admin0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin0.aspx.designer.cs">
+      <DependentUpon>Admin0.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin2.aspx.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin2.aspx.designer.cs">
+      <DependentUpon>Admin2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin3.aspx.cs">
+      <DependentUpon>Admin3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin3.aspx.designer.cs">
+      <DependentUpon>Admin3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin4.aspx.cs">
+      <DependentUpon>Admin4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin4.aspx.designer.cs">
+      <DependentUpon>Admin4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin5.aspx.cs">
+      <DependentUpon>Admin5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin5.aspx.designer.cs">
+      <DependentUpon>Admin5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin6.aspx.cs">
+      <DependentUpon>Admin6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin6.aspx.designer.cs">
+      <DependentUpon>Admin6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin7.aspx.cs">
+      <DependentUpon>Admin7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin7.aspx.designer.cs">
+      <DependentUpon>Admin7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin8.aspx.cs">
+      <DependentUpon>Admin8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin8.aspx.designer.cs">
+      <DependentUpon>Admin8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin9.aspx.cs">
+      <DependentUpon>Admin9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin9.aspx.designer.cs">
+      <DependentUpon>Admin9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin1.aspx.cs">
+      <DependentUpon>Admin1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin1.aspx.designer.cs">
+      <DependentUpon>Admin1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin1_1.aspx.cs">
+      <DependentUpon>Admin1_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin1_1.aspx.designer.cs">
+      <DependentUpon>Admin1_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentClear.cs" />
+    <Compile Include="Google.aspx.cs">
+      <DependentUpon>Google.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Google.aspx.designer.cs">
+      <DependentUpon>Google.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.aspx.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page1.aspx.designer.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page2_1.aspx.cs">
+      <DependentUpon>Page2_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page2_1.aspx.designer.cs">
+      <DependentUpon>Page2_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page3_1.aspx.cs">
+      <DependentUpon>Page3_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page3_1.aspx.designer.cs">
+      <DependentUpon>Page3_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LinkDB.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page3_2.aspx.cs">
+      <DependentUpon>Page3_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page3_2.aspx.designer.cs">
+      <DependentUpon>Page3_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page2_3.aspx.cs">
+      <DependentUpon>Page2_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page2_3.aspx.designer.cs">
+      <DependentUpon>Page2_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page2_2.aspx.cs">
+      <DependentUpon>Page2_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page2_2.aspx.designer.cs">
+      <DependentUpon>Page2_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\2011攀岩队五次比赛.doc" />
+    <None Include="content\中国地质大学（北京）登山队成功登顶岗什卡卫峰.doc" />
+    <None Include="content\中国地质大学（北京）登山队报告会圆满落幕.doc" />
+    <None Include="content\中国地质大学（北京）首届山峰策划大赛顺利举行.doc" />
+    <None Include="content\华丽伟业中国地质大学（北京）登山队阿尼玛卿凯旋归来.doc" />
+    <None Include="content\地大登山攀岩俱乐部2011年终报告会圆满落幕.doc" />
+    <None Include="content\地大登山队五月攀登四川半脊峰及雪宝顶.doc" />
+    <None Include="content\地大登山队自背负成功攀登雪隆包.doc" />
+    <None Include="content\地大（北京）登山队2010年年终报告会圆满落下帷幕.doc" />
+    <None Include="content\奥太娜之行——地大登山走向成熟.doc" />
+    <None Include="content\我校登山队登顶哈巴雪山.doc" />
+    <None Include="Default.aspx.cs.exclude" />
+    <None Include="Default.aspx.exclude" />
+    <Content Include="Web.sitemap" />
+    <None Include="Images\Picasa.ini" />
+    <None Include="中国各区KMZ\东北地区.kmz" />
+    <None Include="中国各区KMZ\中国.kmz" />
+    <None Include="中国各区KMZ\中国各区.kmz" />
+    <None Include="中国各区KMZ\华东地区.kmz" />
+    <None Include="中国各区KMZ\华中地区.kmz" />
+    <None Include="中国各区KMZ\华北地区.kmz" />
+    <None Include="中国各区KMZ\华南地区.kmz" />
+    <None Include="中国各区KMZ\港澳台地区.kmz" />
+    <None Include="中国各区KMZ\西北地区.kmz" />
+    <None Include="中国各区KMZ\西南地区.kmz" />
+    <None Include="中国各区KMZ\中国省界.kmz" />
+    <None Include="山峰KML\哈巴雪山路线.kml" />
+    <None Include="山峰KML\墓士塔格峰.kml" />
+    <None Include="山峰KML\岗什卡峰路线.kml" />
+    <None Include="山峰KML\崂山巨峰.kml" />
+    <None Include="山峰KML\珠穆朗玛峰路线.kml" />
+    <None Include="山峰KML\长白山.kml" />
+    <None Include="山峰KML\雪隆包.kml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3106</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
