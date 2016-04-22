@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="首页面"  description="">
+      <siteMapNode url="" title="俱乐部简介" description="">
+        <siteMapNode url="" title="俱乐部简介" description="" />
+        <siteMapNode url="" title="部门介绍" description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="历史历程" description="">
+      </siteMapNode>
+      <siteMapNode url="" title="日常活动" description="">
+      </siteMapNode>
+      <siteMapNode url="" title="精品活动" description="">
+        <siteMapNode url="" title="冬训" description="" />
+        <siteMapNode url="" title="登山文化节" description="" />
+        <siteMapNode url="" title="暑期社会实践" description="" />
+        <siteMapNode url="" title="十一登山" description="" />
+        <siteMapNode url="" title="年终报告会" description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="山人风光" description="">
+      </siteMapNode>
+      <siteMapNode url="" title="户外百科" description="">
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>
